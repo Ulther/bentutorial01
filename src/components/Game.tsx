@@ -10,7 +10,7 @@ function Game() {
     const [ isXNext, setIsXNext ] = useState(true);
     const winner = CalculateWinner(squares);
 
-    function renderSquare(i) {
+    function renderSquare(i: number) {
         return <Square
             value={squares[i]}
             onClick={() => {
@@ -66,7 +66,7 @@ function Game() {
                 </div>
             </div>
         </div>
-        );
+    );
 }
 
 export default Game;

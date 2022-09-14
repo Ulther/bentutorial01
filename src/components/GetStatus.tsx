@@ -2,7 +2,7 @@ import '../index.css';
 import CalculateWinner from './CalculateWinner';
 import IsBoardFull from './IsBoardFull';
 
-function GetStatus(squares, xIsNext) {
+function GetStatus(squares: any[], xIsNext: boolean) {
     const winner = CalculateWinner(squares)
     //console.log('GetStatus Running')
     if(winner) {

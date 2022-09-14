@@ -1,5 +1,5 @@
 //function to check if game board is full
-function IsBoardFull(squares) {
+function IsBoardFull(squares: string | any[]) {
     //console.log('IsBoardFull Running')
     for(let i = 0; i < squares.length; i++) {
         if (squares[i] == null) {

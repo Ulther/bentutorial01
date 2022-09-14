@@ -1,5 +1,5 @@
 //function remains the same from the tutorial
-function CalculateWinner(squares) {
+function CalculateWinner(squares: any[]) {
     //console.log('CalculateWinner Running')
     const lines = [
       [0, 1, 2],
