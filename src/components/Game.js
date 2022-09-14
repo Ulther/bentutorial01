@@ -3,14 +3,7 @@ import React, { useState } from "react";
 import CalculateWinner from './CalculateWinner';
 import GetStatus from './GetStatus';
 import Restart from './Restart';
-
-function Square({ value, onClick }) {
-    return (
-        <button className='square' onClick={onClick}>
-            {value}
-        </button>
-    );
-}
+import Square from './Square';
 
 function Game() {
     const [ squares, setSquares ] = useState(Array(9).fill(null));
