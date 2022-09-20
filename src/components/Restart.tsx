@@ -1,4 +1,4 @@
-function Restart({ onClick } : { onClick : any }) {
+function Restart({ onClick } : { onClick : () => void }) {
     return (
         <button className='restart' onClick={onClick}>
             Play Again
@@ -7,3 +7,4 @@ function Restart({ onClick } : { onClick : any }) {
 }
 
 export default Restart;
+

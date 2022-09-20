@@ -1,14 +1,14 @@
 import '../index.css';
-import CalculateWinner from './CalculateWinner';
-import IsBoardFull from './IsBoardFull';
+import calculateWinner from '../functions/calculateWinner';
+import isBoardFull from '../functions/isBoardFull';
 
 function GetStatus(squares: any[], xIsNext: boolean) {
-    const winner = CalculateWinner(squares)
+    const winner = calculateWinner(squares)
     //console.log('GetStatus Running')
     if(winner) {
         //console.log('Winner')
         return 'Winner: ' + winner;
-    } else if (IsBoardFull(squares)) {
+    } else if (isBoardFull(squares)) {
         //console.log('Draw')
         return 'Draw';
     } else {
