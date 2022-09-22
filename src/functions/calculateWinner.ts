@@ -1,4 +1,4 @@
-function calculateWinner(squares: any[]) {
+function calculateWinner(squares: string | any[]) {
     //console.log('CalculateWinner Running')
     const lines = [
       [0, 1, 2],

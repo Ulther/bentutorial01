@@ -7,8 +7,6 @@ interface ISquareProps {
     onClick : () => void; 
 }
 
-//which is correct?
-//function Square(value : { value : any }, onClick : { onClick : any }) {
 function Square({ value, onClick } : ISquareProps) {
     return (
         <button className='square' onClick={onClick}>
@@ -18,5 +16,3 @@ function Square({ value, onClick } : ISquareProps) {
 }
 
 export default Square;
-
-//{propA, propB} : {propA:any, propB:any}
