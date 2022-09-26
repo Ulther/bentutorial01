@@ -1,6 +1,6 @@
 import '../index.css';
 import React, { useState } from "react";
-import CalculateWinner from './CalculateWinner';
+import calculateWinner from '../functions/calculateWinner';
 import GetStatus from './GetStatus';
 import Restart from './Restart';
 import Square from './Square';
@@ -8,9 +8,9 @@ import Square from './Square';
 function Game() {
     const [ squares, setSquares ] = useState(Array(9).fill(null));
     const [ isXNext, setIsXNext ] = useState(true);
-    const winner = CalculateWinner(squares);
+    const winner = calculateWinner(squares);
 
-    function renderSquare(i) {
+    function renderSquare(i: number) {
         return <Square
             value={squares[i]}
             onClick={() => {
@@ -66,7 +66,7 @@ function Game() {
                 </div>
             </div>
         </div>
-        );
+    );
 }
 
 export default Game;

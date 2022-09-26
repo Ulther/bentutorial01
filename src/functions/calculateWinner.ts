@@ -1,5 +1,4 @@
-//function remains the same from the tutorial
-function CalculateWinner(squares) {
+function calculateWinner(squares: string | any[]) {
     //console.log('CalculateWinner Running')
     const lines = [
       [0, 1, 2],
@@ -20,5 +19,4 @@ function CalculateWinner(squares) {
     return null;
   }
 
-//export line added so that the function can be imported into other locations
-export default CalculateWinner;
+export default calculateWinner;
