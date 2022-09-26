@@ -2,15 +2,7 @@ import '../index.css';
 import calculateWinner from '../functions/calculateWinner';
 import isBoardFull from '../functions/isBoardFull';
 
-/*
-export type TSquaresValue = "X" | "O" | null;
-
-interface ISquaresProps {
-    value : TSquaresValue;
-}
-*/
-
-function GetStatus(squares: string | any[], xIsNext: boolean) {
+function GetStatus(squares: string[], xIsNext: boolean) {
     const winner = calculateWinner(squares)
     if(winner) {
         //console.log('Winner')
